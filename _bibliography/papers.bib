@@ -1,115 +1,80 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@string{CVPR = {Proceedings of the {IEEE/CVF} Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)}}
+@string{ICCV = {Proceedings of the {IEEE/CVF} Conference on International Conference on Computer Vision (<b>ICCV</b>)}}
+@string{WACV = {Proceedings of the {IEEE/CVF} Winter Conference on Applications of Computer Vision (<b>WACV</b>)}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@string{arXiv = {arXiv preprint,}}
+
+
+@InProceedings{Kim_2023_CVPR,
+    author    = {Sanghyun Kim and Deunsol Jung and Minsu Cho},
+    title     = {Locality-Aware Interaction for Zero-Shot Human-Object Interaction Detection},
+    booktitle = CVPR,
+    year      = {2025},
+    selected = {true},
+    abbr = {CVPR},
+    preview = {coming.png}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{kim2024burst,
+  title={Burst Image Super-Resolution with Base Frame Selection},
+  author={Sanghyun Kim and Minjung Lee and Woohyeok Kim and Deunsol Jung and Jaesung Rim and Sunghyun Cho and Minsu Cho},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshop on New Trends in Image Restroation and Enhancement (<b>NTIRE</b>)},
+  pages={5940--5949},
+  year={2024},
+  selected = {true},
+  abstract={Burst image super-resolution has been a topic of active research in recent years due to its ability to obtain a high-resolution image by using complementary information between multiple frames in the burst. In this work, we explore using burst shots with non-uniform exposures to confront real-world practical scenarios by introducing a new benchmark dataset, dubbed Non-uniformly Exposed Burst Image (NEBI), that includes the burst frames at varying exposure times to obtain a broader range of irradiance and motion characteristics within a scene. As burst shots with non-uniform exposures exhibit varying levels of degradation, fusing information of the burst shots into the first frame  as a base frame may not result in optimal image quality. To address this limitation, we propose a Frame Selection Network (FSN) for non-uniform scenarios. This network seamlessly integrates into existing super-resolution methods in a plug-and-play manner with low computational costs. The comparative analysis reveals the effectiveness of the nonuniform setting for the practical scenario and our FSN on synthetic-/real- NEBI datasets.},
+  abbr = {CVPRW},
+  arxiv= {2406.17869},
+  website={https://postech-cvlab.github.io/Burst_FSN/},
+  preview={FSN.PNG}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+
+@InProceedings{Yoon_2024_WACV,
+    author    = {Jeongbeen Yoon and Sanghyun Kim and Suha Kwak and Minsu Cho},
+    title     = {Optical Flow Domain Adaptation via Target Style Transfer},
+    booktitle = WACV,
+    year      = {2024},
+    pages     = {2111-2121},
+    selected = {true},
+    abstract={Optical flows play an integral role for a variety of motion-related tasks such as action recognition, object segmentation, and tracking in videos. While state-of-the-art optical flow methods heavily rely on learning, the learned optical flow methods significantly degrade when applied to different domains, and the training datasets are very limited due to the extreme cost of flow-level annotation. To tackle the issue, we introduce a domain adaptation technique for optical flow estimation. Our method extracts diverse style statistics of the target domain and use them in training to generate synthetic features from the source features, which contain the contents of the source but the style of the target. We also impose motion consistency between the synthetic target and the source and deploy adversarial learning at the flow prediction to encourage domain-invariant features. Experimental results show that the proposed method achieves substantial and consistent improvements in different domain adaptation scenarios on VKITTI 2, Sintel, and KITTI 2015 benchmarks.},
+    abbr = {WACV},
+    website={https://openaccess.thecvf.com/content/WACV2024/html/Yoon_Optical_Flow_Domain_Adaptation_via_Target_Style_Transfer_WACV_2024_paper.html},
+    preview = {OFDA.PNG}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+@InProceedings{Kim_2023_CVPR,
+    author    = {Sanghyun Kim and Deunsol Jung and Minsu Cho},
+    title     = {Relational Context Learning for Human-Object Interaction Detection},
+    booktitle = CVPR,
+    year      = {2023},
+    pages     = {2925-2934},
+    selected = {true},
+    abstract={Recent state-of-the-art methods for HOI detection typically build on transformer architectures with two decoder branches, one for human-object pair detection and the other for interaction classification. Such disentangled transformers, however, may suffer from insufficient context exchange between the branches and lead to a lack of context information for relational reasoning, which is critical in discovering HOI instances. In this work, we propose the multiplex relation network (MUREN) that performs rich context exchange between three decoder branches using unary, pairwise, and ternary relations of human, object, and interaction tokens. The proposed method learns comprehensive relational contexts for discovering HOI instances, achieving state-of-the-art performance on two standard benchmarks for HOI detection, HICO-DET and V-COCO.
+},
+    website = {https://cvlab.postech.ac.kr/research/MUREN/},
+    code = {https://github.com/OreoChocolate/MUREN},
+    abbr = {CVPR},
+    arxiv = {2304.04997},
+    preview = {MUREN.PNG}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@InProceedings{Jung_2023_CVPR,
+    author    = {Deunsol Jung and Sanghyun Kim and Won Hwa Kim and Minsu Cho},
+    title     = {Devil's on the Edges: Selective Quad Attention for Scene Graph Generation},
+    booktitle = CVPR,
+    year      = {2023},
+    pages     = {18664-18674},
+    selected = {true},
+    abstract={Scene graph generation aims to construct a semantic graph structure from an image such that its nodes and edges respectively represent objects and their relationships. One of the major challenges for the task lies in the presence of distracting objects and relationships in images; contextual reasoning is strongly distracted by irrelevant objects or backgrounds and, more importantly, a vast number of irrelevant candidate relations. To tackle the issue, we propose the Selective Quad Attention Network (SQUAT) that learns to select relevant object pairs and disambiguate them via diverse contextual interactions. SQUAT consists of two main components: edge selection and quad attention. The edge selection module selects relevant object pairs, i.e., edges in the scene graph, which helps contextual reasoning, and the quad attention module then updates the edge features using both edge-to-node and edge-to-edge cross-attentions to capture contextual information between objects and object pairs. Experiments demonstrate the strong performance and robustness of SQUAT, achieving the state of the art on the Visual Genome and Open Images v6 benchmarks},
+    website = {https://cvlab.postech.ac.kr/research/SQUAT/},
+    code = {https://github.com/hesedjds/SQUAT},
+    abbr = {CVPR},
+    arxiv = {2304.03495},
+    preview = {SQUAT.PNG}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
-}
