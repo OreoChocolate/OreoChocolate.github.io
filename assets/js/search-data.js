@@ -376,7 +376,7 @@ ninja.data = [{
         
       },
     },{id: "education-soongsil-university-seoul-south-korea-b-s-in-computer-science-and-engineering-gpa-4-30-4-5-summa-cum-laude-advisor-prof-kyubaek-hwang",
-          title: 'Soongsil University , Seoul, South Korea B.S. in Computer Science and Engineering GPA:...',
+          title: 'Soongsil University, Seoul, South Korea B.S. in Computer Science and Engineering GPA: 4.30/4.5...',
           description: "",
           section: "Education",},{id: "education-pohang-university-of-science-and-technology-postech-pohang-south-korea-integrated-m-s-ph-d-student-in-computer-science-and-engineering-gpa-3-96-4-3-advisor-prof-minsu-cho",
           title: 'Pohang University of Science and Technology (POSTECH), Pohang, South Korea Integrated M.S./Ph.D. student...',
