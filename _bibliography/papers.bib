@@ -8,7 +8,21 @@
 @string{arXiv = {arXiv preprint,}}
 
 
-@InProceedings{Kim_2023_CVPR,
+
+@InProceedings{Jo_2025_ICCV,
+    author    = {Eunchan Jo and Dahyun Kang and Sanghyun Kim and Yunseon Choi and Minsu Cho},
+    title     = {Few-Shot Pattern Detection via Template Matching and Regression},
+    booktitle = ICCV,
+    year      = {2025},
+    pages     = {20190-20200},
+    selected = {true},
+    abbr = {ICCV},
+    website={https://chipmunk-g4.github.io/TMR/},
+    preview = {coming.png},
+}
+
+
+@InProceedings{Kim_2025_CVPR,
     author    = {Sanghyun Kim and Deunsol Jung and Minsu Cho},
     title     = {Locality-Aware Zero-Shot Human-Object Interaction Detection},
     booktitle = CVPR,
@@ -19,6 +33,7 @@
     preview = {LAIN.png},
     arxiv= {2506.07209},
     code = {https://github.com/OreoChocolate/LAIN},
+    additional_info={Invited Poster Presentation, 3rd RHOBIN Workshop @ CVPR2025},
     abstract={Recent methods for zero-shot Human-Object Interaction (HOI) detection typically leverage the generalization ability of large Vision-Language Model (VLM), i.e., CLIP, on unseen categories, showing impressive results on various zero-shot settings. However, existing methods struggle to adapt CLIP representations for human-object pairs, as CLIP tends to overlook fine-grained information necessary for distinguishing interactions. To address this issue, we devise, LAIN, a novel zero-shot HOI detection framework designed to enhance the locality and interaction awareness of CLIP representations. The locality awareness, which involves capturing fine-grained details and the spatial structure of individual objects, is achieved by aggregating the information and spatial priors of adjacent neighborhood patches. The interaction awareness, which involves identifying whether and how a human is interacting with an object, is achieved by capturing the interaction pattern between the human and the object. By infusing locality and interaction awareness into CLIP representation, LAIN captures detailed information about the human-object pairs. Our extensive experiments on existing benchmarks show that LAIN outperforms previous methods in various zero-shot settings, demonstrating the importance of locality and interaction awareness for effective zero-shot HOI detection.}
 }
 
