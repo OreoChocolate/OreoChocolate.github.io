@@ -181,7 +181,9 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
-
+    {% if entry.additional_info2 -%}
+    <span style="color: #2698ba">{{entry.additional_info2}}</span>
+    {%- endif %}
     <!-- Links/Buttons -->
     <div class="links">
       {% if entry.award %}
