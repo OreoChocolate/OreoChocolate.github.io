@@ -4,6 +4,6 @@ permalink: /cv/
 title: Curriculum Vitae
 nav: true
 nav_order: 5
-cv_pdf: sanghyun.kim_cv.pdf # file in assets/pdf/ that /cv/ redirects to
+nav_link: /assets/pdf/sanghyun.kim_cv.pdf # the CV menu item opens this PDF directly; /cv/ also redirects to it
 sitemap: false
 ---

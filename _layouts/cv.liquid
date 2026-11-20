@@ -2,7 +2,7 @@
 <html lang="{{ site.lang }}">
   <head>
     <meta charset="utf-8">
-    {% assign cv_url = page.cv_pdf | prepend: '/assets/pdf/' | relative_url %}
+    {% assign cv_url = page.nav_link | relative_url %}
     <title>{{ page.title }} | {{ site.first_name }} {{ site.last_name }}</title>
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="{{ cv_url | absolute_url }}">
