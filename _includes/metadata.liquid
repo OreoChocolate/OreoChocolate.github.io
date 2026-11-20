@@ -229,9 +229,16 @@
       {% if site.job_title %}, "jobTitle": {{ site.job_title | jsonify }}{% endif %}
       {% if site.affiliation %}
         , "affiliation": {
-          "@type": "CollegeOrUniversity",
+          "@type": "Organization",
           "name": {{ site.affiliation.name | jsonify }},
           "url": {{ site.affiliation.url | jsonify }}
+        }
+      {% endif %}
+      {% if site.alumni_of %}
+        , "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": {{ site.alumni_of.name | jsonify }},
+          "url": {{ site.alumni_of.url | jsonify }}
         }
       {% endif %}
       {% if site.research_topics %}, "knowsAbout": {{ site.research_topics | jsonify }}{% endif %}

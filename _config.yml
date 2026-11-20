@@ -3,17 +3,17 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-home_title: Sanghyun Kim | Ph.D. Candidate at POSTECH Computer Vision Lab # <title> of the home page (shown in search results)
+home_title: Sanghyun Kim | Research Engineer at Samsung Electronics, Ph.D. from POSTECH # <title> of the home page (shown in search results)
 first_name: Sanghyun
 middle_name: 
 last_name: Kim
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Sanghyun Kim is a Ph.D. candidate at the POSTECH Computer Vision Lab, advised by Prof. Minsu Cho. Research on computer vision and deep learning: human-object interaction (HOI) detection and scene understanding.
+  Sanghyun Kim is a Research Engineer at Samsung Electronics with a Ph.D. from the POSTECH Computer Vision Lab. Research on computer vision and deep learning: human-object interaction (HOI) detection and scene understanding.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Sanghyun Kim, POSTECH, Computer Vision Lab, computer vision, deep learning, human-object interaction detection, HOI detection, scene graph generation, zero-shot learning # add your own keywords or leave empty
+keywords: Sanghyun Kim, Samsung Electronics, POSTECH, Computer Vision Lab, computer vision, deep learning, human-object interaction detection, HOI detection, scene graph generation, zero-shot learning # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -21,8 +21,11 @@ url: https://oreochocolate.github.io # the base hostname & protocol for your sit
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 
 # Used for the Schema.org (structured data) description of the site owner
-job_title: Ph.D. Candidate
+job_title: Research Engineer
 affiliation:
+  name: Samsung Electronics
+  url: https://semiconductor.samsung.com/
+alumni_of:
   name: Pohang University of Science and Technology (POSTECH)
   url: https://postech.ac.kr/
 research_topics:
@@ -161,6 +164,11 @@ collections:
       layout: post
     output: true
     permalink: /:collection/:title/
+  experience:
+    defaults:
+      layout: post
+    output: true
+    permalink: /:collection/:title/
   projects:
     output: true
     permalink: /:collection/:title/
@@ -244,6 +252,12 @@ defaults:
   - scope:
       path: ""
       type: "education"
+    values:
+      sitemap: false
+      noindex: true
+  - scope:
+      path: ""
+      type: "experience"
     values:
       sitemap: false
       noindex: true
